@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 💍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6f0;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #cc0066;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff4d88;
+            color: white;
+        }
+        .no {
+            background-color: #999;
+            color: white;
+        }
+        #message {
+            margin-top: 30px;
+            font-size: 22px;
+            color: #660033;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will you marry me? 💍❤️</h1>
+
+    <button class="yes" onclick="sayYes()">Yes</button>
+    <button class="no" onclick="sayNo()">No</button>
+
+    <div id="message"></div>
+
+    <script>
+        function sayYes() {
+            document.getElementById("message").innerHTML = "I am yours ❤️";
+        }
+
+        function sayNo() {
+            document.getElementById("message").innerHTML = "We will marry soon 😉";
+        }
+    </script>
+
+</body>
+</html>
